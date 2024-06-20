@@ -1,0 +1,32 @@
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.members = True
+
+client = MyClient(intents=intents)
+
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+@bot.evevnt
+async def on_redy():
+    print(f'hai fatto l\'accesso come {bot.user}')
+
+@bot.command()
+async def Eco(ctx):
+    with open('images' , 'rb') as f:
+
+
+
+@bot.command
+async def trash_saving_tips(ctx):
+    suggerimenti = ''
+    suggerimenti += '\n'
+    suggerimenti = '-raccolta differenziata'
+    suggerimenti = '-usare le bio plastiche'
+    suggerimenti = '-Filtro per l acqua'
+    suggerimenti = '-riutilizzare i rifiuti'
