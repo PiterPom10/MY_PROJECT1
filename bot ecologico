@@ -22,11 +22,14 @@ async def Eco(ctx):
 
 
 
-@bot.command
-async def trash_saving_tips(ctx):
+bot.command()
+async def Eco1(ctx):
     suggerimenti = ''
     suggerimenti += '\n'
-    suggerimenti = '-raccolta differenziata'
-    suggerimenti = '-usare le bio plastiche'
-    suggerimenti = '-Filtro per l acqua'
-    suggerimenti = '-riutilizzare i rifiuti'
+    suggerimenti = '- raccolta differenziata \n'
+    suggerimenti = '- usare le bioplastiche \n'
+    suggerimenti = '- Filtro per l acqua \n'
+    suggerimenti = '- riutilizzare i rifiuti \n'
+    suggerimenti = '- utilizare auto eletricche \n'
+
+    await ctx.send('Ecco alcuni consigli: ' + suggerimenti )
